@@ -26,3 +26,12 @@ const analyzeComment = (comment, callback) => {
         })
         .catch(error => console.error(error))
 }
+
+const displayResult = result => {
+    // Remove invisible class fo main-block
+    const resultBlockElement = document.getElementById('main-result-block');
+    resultBlockElement.classList.remove('invisible');
+
+    // Setting the color of the result text depending on the response label
+    const label = result.label;
+}
